@@ -1,0 +1,66 @@
+.card {
+    min-width: 170px;
+    max-width: 220px;
+    width: 200px;
+    height: 150px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 20px;
+}
+
+.card.gain {
+    border: 1px solid #00b518;
+}
+
+.card.loss {
+    border: 1px solid #e60000;
+}
+
+
+.card .name {
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+.card .name span {
+    margin: 0px 0px 0px 4px;
+    font-weight: normal;
+}
+
+.card .percentage {
+    padding: 8px 12px;
+    font-size: 1.2em;
+}
+
+.card .price {
+    padding: 8px 12px;
+    font-size: 2em;
+}
+
+.card .percentage.gain,
+.card .price.gain {
+    color: #00b518;
+   
+}
+
+.card .percentage.loss,
+.card .price.loss {
+    color: #e60000;
+   
+}
+
+.pulse {
+    animation: pulse 3s ease alternate;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(.3);
+    }
+    50% {
+
+    }
+    100% {
+      transform: scale(1.0);
+    }
+  }

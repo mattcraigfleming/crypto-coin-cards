@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+.App {
+  padding: 100px;
+  height: 100%;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 4%;
+  margin: 4%;
+}
+
+.item {
+  padding: 20px;
+}
