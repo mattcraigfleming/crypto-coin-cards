@@ -21,7 +21,7 @@ class CoinList extends Component {
 
     updateData() {
         fetch(`https://www.cryptocompare.com/api/data/coinsnapshot/?fsym=${this.state.symbol}&tsym=GBP`, {
-            method: "POST",    
+            method: "GET",    
             mode: "cors"
         })
         .then(res => res.json())
