@@ -20,7 +20,10 @@ class CoinList extends Component {
     }
 
     updateData() {
-        fetch(`https://www.cryptocompare.com/api/data/coinsnapshot/?fsym=${this.state.symbol}&tsym=GBP`)
+        fetch(`https://www.cryptocompare.com/api/data/coinsnapshot/?fsym=${this.state.symbol}&tsym=GBP`, {
+            method: "POST",    
+            mode: "cors"
+        })
         .then(res => res.json())
         .then(json => {
                 const cryptos = json.Data.Exchanges;
@@ -36,7 +39,8 @@ class CoinList extends Component {
           
         return ( 
             <div>
-                <h3>Bitcoin (BTC)</h3>
+                <h3>Coin Listing</h3>
+                <hr />
                 <div className="container">
                 {Object.keys(this.state.cryptos).map((key) => (
                     <div className="exchange-card item">

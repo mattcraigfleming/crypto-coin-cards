@@ -47,8 +47,6 @@ class App extends Component {
       </div>
 
       <div>
-        <h2>Exchanges</h2>
-        <hr />
         <CoinList />
       </div>
       <h2>Social</h2>
